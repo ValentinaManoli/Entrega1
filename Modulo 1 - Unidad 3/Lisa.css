@@ -1,3 +1,58 @@
-h1{
-    color:red;
+
+* {
+    background-color: beige;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: rgb(80, 23, 23);
+    background-color: gold;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+h2{
+    color: rgb(80, 23, 23);
+}
+.familia{
+    color: gold;
+    font-size: 35px;
+    text-align: center;
+    font-style: bold;
+    background-color:  rgb(80, 23, 23);
+}
+.hobbies{
+    color: coral;
+    font-size: 35px;
+    text-align: center;
+    font-style: bold;
+    background-color:  rgb(80, 23, 23);
+}
+
+ul {
+
+    width: auto;
+    height: 150px;
+    
+    font-size: 25px;
+}
+
+ul:hover {
+    border: 3px solid rgb(80, 23, 23);
+    background-color: gold;
+    
+}
+ol{
+    width: auto;
+    height: 125px;
+    font-size: 25px;
+}
+ol:hover{
+    border: 3px solid rgb(80, 23, 23);
+    background-color: coral;
+}
+
+a:hover {
+    color: goldenrod;
 }
