@@ -8,6 +8,8 @@ h1 {
     background-color: gold;
     text-align: center;
     font-size: 50px;
+    position: fixed;
+    margin-top: 0px;
 
 }
 
@@ -39,10 +41,11 @@ ul {
 
 ul:hover {
     border: 3px solid rgb(80, 23, 23);
-    background-color: gold;
+   
     height: auto;
     color:rgb(80, 23, 23) ;
 }
+
 ol{
     width: auto;
     height: 125px;
@@ -51,7 +54,7 @@ ol{
 ol:hover{
     color: rgb(80, 23, 23);
     border: 3px solid ;
-    background-color: coral;
+   
     height: auto;
     
 }
@@ -62,6 +65,7 @@ a:hover {
 
 img{
     box-shadow: -2px 0px 11px 4px rgba(0,0,0,0.3);
+    margin-top: 60px;
     
 }
 
@@ -80,4 +84,11 @@ div {
     font-style: bold;
     
    
+}
+
+.lista1:hover{
+    background-color: gold;
+}
+.lista2:hover{
+    background-color: coral;
 }
