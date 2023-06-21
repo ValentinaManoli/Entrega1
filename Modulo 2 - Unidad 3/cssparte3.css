@@ -15,29 +15,50 @@ body {
 	margin-left:auto;
 	overflow: hidden;
     
+    
+    
+}
+.lista {
+    background-color:  #CC3910;
+    height: 100px;
+    text-align: center;
+    width: 150px;
+    
+
 }
 nav {
-	background: #CC3910;
+	
 	float: left;
-	width: 160px;
+	width: 800px;
+    display: flex;
+    justify-content: space-between;
+    
+    
 }
 ul {
 	list-style-type:none;
+    text-align: center;
+   
+    
 }
 a {
 	color:#F1F2C0;
-	text-decoration: none;
+    text-align: center;
+    text-decoration: none;
 }
 section {
 	background: #F1F2C0;
 	float: left;
-	margin: 0 0 0 25px;
+	height: 150px;
 	width: 400px;
+
+    
 }
 aside {
 	background: #CCC59E;
 	float: right;
 	width: 190px;
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -45,6 +66,14 @@ aside {
        padding: 0px;
        margin: 0px;
     
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    .lista{
+        width: 100%;
+        float: none;
+        ;
     }
     #contenedor{
         width: 100%;
@@ -56,7 +85,6 @@ aside {
     }
     section{
         float: right;
-        margin-top: -15px;
         width: 100%;
     }
     aside {
