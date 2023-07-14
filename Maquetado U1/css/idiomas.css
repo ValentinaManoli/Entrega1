@@ -147,18 +147,51 @@ footer{
 /*seccion iniciar sesion*/
 .columna2{
     display: flex;
+    max-height: 750px;
     justify-content: space-between;
     margin: 20px;
+   
 }
 .iniciarsesion{
-    background-color: grey;
-    padding: 150px;
-    text-align: right;
+    max-width: 50%;
+    padding: 50px;
+    text-align: center;
+    
+    
+
+}
+.iniciarsesion button, .registrarse button{
+    margin-top: 15px;
+    
+}
+.iniciarsesion{
+    
+
+}
+.registrarse:hover, .iniciarsesion:hover{
+    background-color: rgb(228, 228, 228);
+
 }
 .registrarse{
-    background-color: red;
-    padding: 150px;
+    max-width: 50%;
+    padding: 50px;
+    display: inline-block;
 }
 .form-floating{
     align-items: center;
+}
+
+/*fin de seccion iniciar sesion*/
+
+
+/*nosotros*/
+
+.formulario{
+    display: flex;
+
+
+}
+.formulariocontacto{
+    column-gap: 4;
+    display: wrap;
 }
