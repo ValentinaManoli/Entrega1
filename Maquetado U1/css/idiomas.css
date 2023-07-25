@@ -28,11 +28,19 @@ header h1{
     padding-top: 50px;
     margin-left: 15px;
 }
+main h2{
+    margin-top: 50px;
+
+}
 
 nav{
     background-color: rgb(255, 87, 51);
-    margin-bottom: 20px;
+    margin-top: -20px;
     height: 55px;
+    /*position: fixed;
+    width: 100%;
+    z-index: 2000;*/
+    
     
     
     
@@ -58,7 +66,7 @@ nav ul li a {
     text-align: center;
     font-size: 22px;
     padding: 10px;
-    /*margin-top: 15px;*/
+    
 }
 
 nav ul li a.activo {
@@ -70,7 +78,7 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
-/*Bienvenidos y testimonios*/
+/*Home*/
 .holder{
     max-width: 900px;
     margin: 0 auto;
@@ -91,6 +99,7 @@ h2, h3, h4{
     width: 100%;
     padding-top: 10px;
     padding-left: 10px;
+    text-align: justify;
     
 
 }
@@ -102,7 +111,7 @@ h2, h3, h4{
     border: 1px solid grey;
 }
 
-/*fin bienv y test*/
+/*fin Home*/
 
 footer{
     text-align: center;
@@ -123,10 +132,7 @@ footer{
     
 }
 
-/*.idiomas_1, .idiomas_3{
 
-    margin-right: 50px;
-}*/
 .idiomas img{
     height: 200px;
     width: 300px;    
@@ -144,19 +150,19 @@ footer{
 }
 /*fin de sección cursos*/
 
+
 /*seccion iniciar sesion*/
 .columna2{
     display: flex;
     max-height: 750px;
     justify-content: space-between;
-    margin: 20px;
+    margin-top: 50px;
    
 }
 .iniciarsesion{
-    max-width: 50%;
+    width: 50%;
     padding: 50px;
     text-align: center;
-    
     
 
 }
@@ -164,12 +170,11 @@ footer{
     margin-top: 15px;
     
 }
-.iniciarsesion{
-    
 
-}
 .registrarse:hover, .iniciarsesion:hover{
     background-color: rgb(228, 228, 228);
+    transform: scale(1.05);
+    transition: 0.3s;
 
 }
 .registrarse{
@@ -177,6 +182,7 @@ footer{
     padding: 50px;
     display: inline-block;
 }
+.iniciarsesion
 .form-floating{
     align-items: center;
 }
@@ -194,4 +200,66 @@ footer{
 .formulariocontacto{
     column-gap: 4;
     display: wrap;
+}
+.equipotitulo{
+    margin-top: auto;
+
+}
+.equipo{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.equipo img{
+    width: 150px;
+    height: 150px;
+    align-content: center;
+    
+}
+.persona1, .persona2, .persona3, .persona4, .persona5{
+    width: 160px;
+    height: 300px;
+    box-sizing: border-box;
+    
+    
+}
+.persona1:hover, .persona2:hover, .persona3:hover, .persona4:hover, .persona5:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    border: 1.5px solid grey ;
+}
+
+/*Mas info*/
+.informacion {
+    display: inline-block;
+    width: 60%;
+    margin-left: 20px;
+    
+    
+}
+div.list-group{
+    display: inline-flex;
+    margin-top: 20px;
+    
+}
+.list-group{
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.iconos i{
+    color: rgb(255, 87, 51);
+   display: block;
+   margin: 10px;
+   font-size: 40px;
+}
+
+
+/*prueba de media q*/
+
+@media screen and (max-width: 800px){
+    
+    
 }
