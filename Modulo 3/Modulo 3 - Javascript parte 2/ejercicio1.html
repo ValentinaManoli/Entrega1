@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+<script>
+    const body = document.getElementsByTagName ('body')
+    const rojo = document.getElementById ('rojo')
+    const amarillo = document.getElementById ('amarillo')
+    const azul = document.getElementById ('azul')
+
+
+    rojo.addEventListener('click', function(){
+        body.style.backgroundColor = 'red'
+    })
+
+    amarillo.addEventListener('click', function(){
+        body.style.backgroundColor = 'yellow'
+    })
+    azul.addEventListener('click', function(){
+        body.style.backgroundColor = 'blue'
+    })
+</script>
+<body>
+    <div id="rojo"></div>
+    <div id="amarillo"></div>
+    <div id="azul"></div>
+</body>
+</html>
