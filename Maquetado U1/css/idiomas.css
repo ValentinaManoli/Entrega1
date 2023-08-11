@@ -191,61 +191,82 @@ footer{
 
 
 /*nosotros*/
-
-.formulario{
-    display: flex;
-
-
+.formulario input, .formulario textarea{
+    width: 280px;
+    height: 40px;
+    margin: 5px 5px;
+    border-radius: 2px;
+    
+}
+.mensaje textarea{
+    column-gap: 7;
+    width: 100%;
+    height: 300px;
 }
 .formulariocontacto{
-    column-gap: 4;
-    display: wrap;
+    display: flex;
+    display-wrap: wrap;
+   justify-content: space-between;
 }
+
+
 .equipotitulo{
     margin-top: auto;
 
 }
 .equipo{
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
 }
-.equipo img{
+
+.persona1, .persona2, .persona3, .persona4, .persona5{
+    width: 300px;
+    height: 300px;
+    
+    
+}
+.caja img{
+    justify-content: center;
     width: 150px;
     height: 150px;
-    align-content: center;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 87, 51);
+
+    margin-top: 10px;
     
 }
-.persona1, .persona2, .persona3, .persona4, .persona5{
-    width: 160px;
-    height: 300px;
-    box-sizing: border-box;
-    
-    
+.caja h6{
+    margin-top: 5px;
+    text-align: center;
+    color: rgb(117, 117, 117);
+}
+.caja h5, .caja p, .caja{
+    margin-top: 6px;
+    text-align: center;
+
+
 }
 .persona1:hover, .persona2:hover, .persona3:hover, .persona4:hover, .persona5:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-    border: 1.5px solid grey ;
+    transition: 0.5s;
+    /*border: 1.5px solid rgb(255, 87, 51);*/
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+    
+    
+    
 }
 
 /*Mas info*/
+.btn-primary{
+    width: 40%;
+}
 .informacion {
     display: inline-block;
-    width: 60%;
-    margin-left: 20px;
-    
-    
-}
-div.list-group{
-    display: inline-flex;
-    margin-top: 20px;
-    
-}
-.list-group{
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 15px;
     
     
 }
