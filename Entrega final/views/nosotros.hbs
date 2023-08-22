@@ -1,0 +1,126 @@
+<main class="holder">
+
+    <div class="sobrenosotros">
+        <h2>Sobre nosotros</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque ad cupiditate at fugiat deserunt, magni
+            quas vel ab voluptates alias ex explicabo, reiciendis dolores deleniti corporis, saepe expedita ea
+            totam.
+            Odio non quas asperiores sapiente quo consequuntur dolorum beatae repellendus ipsa, molestiae pariatur.
+            Rerum officiis labore, earum nisi alias dolorem nulla. Voluptas culpa necessitatibus aliquam
+            consequuntur unde temporibus optio suscipit?
+            Beatae nulla, nihil sint rem recusandae repudiandae et itaque accusantium harum odit quis, tempore
+            sapiente praesentium. Cum iste possimus qui, veritatis voluptatum placeat adipisci aperiam ipsam
+            deserunt architecto, ab omnis?
+            Harum consectetur animi obcaecati minus natus blanditiis amet aut. Tempore dolorum ducimus rem? Dolore
+            iste explicabo optio veritatis consectetur eos, molestias sunt et temporibus aspernatur minus, placeat
+            amet, earum soluta.
+            Consequuntur magni natus voluptatibus fugit temporibus iste cupiditate consectetur unde ad, maiores
+            voluptatum deserunt cumque quis optio dignissimos? Velit labore culpa accusamus placeat repellendus ex
+            vitae illum nisi quam voluptate.</p>
+    </div>
+    <hr>
+    <div>
+        <h2 class="equipotitulo">Nuestro equipo</h2>
+        <div class="equipo">
+            <div class="persona1 caja">
+                <img src="/images/persona1.jpg" alt="">
+                <h6>Cargo</h6>
+                <h5>Nombre Apellido</h5>
+                <p>Descripción...</p>
+            </div>
+
+            <div class="persona2 caja">
+                <img src="/images/persona2.jpg" alt="">
+                <h6>Cargo</h6>
+                <h5>Nombre Apellido</h5>
+                <p>Descripción...</p>
+            </div>
+            <div class="persona3 caja">
+                <img src="/images/persona3.jpg" alt="">
+                <h6>Cargo</h6>
+                <h5>Nombre Apellido</h5>
+                <p>Descripción...</p>
+
+            </div>
+
+            <div class="persona4 caja">
+                <img src="/images/persona4.jpg" alt="">
+                <h6>Cargo</h6>
+                <h5>Nombre Apellido</h5>
+                <p>Descripción...</p>
+
+            </div>
+            <div class="persona5 caja">
+                <img src="/images/persona5.jpg" alt="">
+                <h6>Cargo</h6>
+                <h5>Nombre Apellido</h5>
+                <p>Descripció<n class=""></n>
+                </p>
+
+            </div>
+
+        </div>
+        <hr>
+        <h2>Contactanos</h2>
+        <form action="/nosotros" method="post" class="formulario">
+            <div class="formulariocontacto">
+                <input type="name" class="nombre" placeholder="Nombre" name="nombre">
+                <input type="name" class="apellido" placeholder="Apellido" name="apellido">
+                <input type="email" class="email" placeholder="Email" name="email">
+                <input type="tel" class="telefono" placeholder="Teléfono de contacto" name="tel">
+                <button>Enviar</button>
+            </div>
+            <div class="mensaje">
+                <textarea name="mensaje" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+        <p>{{message}}</p>
+
+
+    </div>
+    <div id="trabaja">
+        <h2>
+            Trabajá con nosotros
+        </h2>
+        <form action="/nosotros">
+        <div class="row g-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre completo" aria-label="Nombre completo" name="nombre">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" name="apellido">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <input type="email" class="form-control" placeholder="Email" name="email">
+            </div>
+
+        </div>
+        </form>
+        
+        <select class="form-select mt-3" aria-label="Default select example">
+            <option selected>Seleccioná el idioma que te interesa</option>
+            <option value="1">Alemán</option>
+            <option value="2">Francés</option>
+            <option value="3">Inglés</option>
+            <option value="4">Portugués</option>
+        </select>
+        <input type="file" class="adjuntararchivo" placeholder="Adjuntá tu CV acá" name="adjuntarcv">
+        <button class="btn btn-primary mt-3" type="submit">Enviar</button>
+        <p>{{message}}</p>
+        <hr>
+        <div id="redes">
+            <h2>Nuestras redes sociales</h2>
+            <div class="iconos">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</main>

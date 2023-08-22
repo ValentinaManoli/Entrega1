@@ -1,0 +1,286 @@
+ body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header{
+    background-color:rgb(199, 0, 57);
+    padding: 16px 0px;
+    color: white;
+    text-align: center;
+    
+}
+header img{
+    
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+
+}
+
+header h1{
+    color: white;
+    font-size: 60px;
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    padding-top: 50px;
+    margin-left: 15px;
+}
+main h2{
+    margin-top: 50px;
+
+}
+
+nav{
+    background-color: rgb(255, 87, 51);
+    margin-top: -20px;
+    height: 55px;
+    /*position: fixed;
+    width: 100%;
+    z-index: 2000;*/
+    
+    
+    
+    
+}
+
+nav ul{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-weight: 500;
+    
+}
+
+nav ul li{
+    flex-grow: 1;
+    
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    
+}
+
+nav ul li a.activo {
+    background-color: rgb(144, 12, 63) ;
+}
+nav ul li a:hover {
+    background-color: rgb(144, 12, 63) ;
+    color: white;
+    transition: 0.5s;
+}
+
+/*Home*/
+.holder{
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+.columnas{
+    display: flex;
+}
+h2, h3, h4{
+   color: rgb(144, 12, 63); 
+}
+ .bienvenidos{
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+ }
+.aprender{
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: justify;
+    
+
+}
+.testimonios{
+    width: 35%;
+    padding-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid grey;
+}
+
+/*fin Home*/
+
+footer{
+    text-align: center;
+    max-height: 100px;
+    margin-top: 20px;
+   padding: 40px 0px;
+    background-color: rgb(206, 206, 206);
+    color: black;
+    clear: both;
+}
+
+
+/*Sección cursos*/
+.idiomas{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+
+.idiomas img{
+    height: 200px;
+    width: 300px;    
+    align-content: center;
+}
+.card{
+    width: 350px;
+    padding: 5%;
+    margin: 20px 20px;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+/*fin de sección cursos*/
+
+
+/*seccion iniciar sesion*/
+.columna2{
+    display: flex;
+    max-height: 750px;
+    justify-content: space-between;
+    margin-top: 50px;
+   
+}
+.iniciarsesion{
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+    
+
+}
+.iniciarsesion button, .registrarse button{
+    margin-top: 15px;
+    
+}
+
+.registrarse:hover, .iniciarsesion:hover{
+    background-color: rgb(228, 228, 228);
+    transform: scale(1.05);
+    transition: 0.3s;
+
+}
+.registrarse{
+    max-width: 50%;
+    padding: 50px;
+    display: inline-block;
+}
+.iniciarsesion
+.form-floating{
+    align-items: center;
+}
+
+/*fin de seccion iniciar sesion*/
+
+
+/*nosotros*/
+.formulario input, .formulario textarea{
+    width: 280px;
+    height: 40px;
+    margin: 5px 5px;
+    border-radius: 2px;
+    
+}
+.mensaje textarea{
+    column-gap: 7;
+    width: 100%;
+    height: 300px;
+}
+.formulariocontacto{
+    display: flex;
+    display-wrap: wrap;
+   justify-content: space-between;
+}
+
+
+.equipotitulo{
+    margin-top: auto;
+
+}
+.equipo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.persona1, .persona2, .persona3, .persona4, .persona5{
+    width: 300px;
+    height: 300px;
+    
+    
+}
+.caja img{
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 87, 51);
+
+    margin-top: 10px;
+    
+}
+.caja h6{
+    margin-top: 5px;
+    text-align: center;
+    color: rgb(117, 117, 117);
+}
+.caja h5, .caja p, .caja{
+    margin-top: 6px;
+    text-align: center;
+
+
+}
+.persona1:hover, .persona2:hover, .persona3:hover, .persona4:hover, .persona5:hover {
+    transition: 0.5s;
+    /*border: 1.5px solid rgb(255, 87, 51);*/
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+    
+    
+    
+}
+
+/*Mas info*/
+.btn-primary{
+    width: 40%;
+}
+.informacion {
+    display: inline-block;
+    justify-content: center;
+    max-width: 900px;
+    margin: 15px;
+    
+    
+}
+.iconos i{
+    color: rgb(255, 87, 51);
+   display: block;
+   margin: 10px;
+   font-size: 40px;
+}
+
+
+/*prueba de media q*/
+
+@media screen and (max-width: 800px){
+    
+    
+}
