@@ -5,13 +5,12 @@ var nodemailer = require("nodemailer");
 
 router.post('/', async(req, res, next) => {
 
-  //console.log(req.body)
+  console.log(req.body)
 
   var nombre = req.body.nombre;
   var apellido = req.body.apellido;
   var email = req.body.email;
   var tel = req.body.tel;
-  var adjuntarcv = req.body.adjuntarcv;
   var mensaje = req.body.mensaje;
 
   var obj = {
@@ -27,10 +26,10 @@ router.post('/', async(req, res, next) => {
       pass: process.env.SMTP_PASS
     }
   })
-  var info = await transport.sendMail(obj);
+ var info = await transport.sendMail(obj);
 
   res.render('nosotros', {
-    message = 'Enviado correctamente'
+    message: 'Enviado correctamente'
   })
 
 })

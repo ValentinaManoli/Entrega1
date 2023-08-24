@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script>
-    const mensaje = document.getElementById ('mensaje')
-    const contador = document.getElementById ('contador')
 
-    mensaje.addEventListener('input', function (e){
-        const target = e.target
-        const longitud = target.value.length;
-        contador.innerHTML = `${longitud}`
-    })
-
-</script>
 <body>
     <p id="contador">Ingrese su mensaje aquí</p>
     <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
     
+    <script>
+        const mensaje = document.getElementById ('mensaje')
+        const contador = document.getElementById ('contador')
     
+        mensaje.addEventListener('input', function (e){
+            const target = e.target
+            const longitud = target.value.length;
+            contador.innerHTML = `Cantidad de caracteres: ${longitud}`
+        })
+    
+    </script>
 </body>
 </html>
