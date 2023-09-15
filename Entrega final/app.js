@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var pool = require('./models/bd');
 require('dotenv').config();
 
 var indexRouter = require('./routes/index');
@@ -14,6 +14,7 @@ var masinfoRouter = require('./routes/masinfo');
 var iniciarsesionRouter = require('./routes/iniciarsesion');
 
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -31,6 +32,11 @@ app.use('/nosotros', nosotrosRouter);
 app.use('/cursos', cursosRouter);
 app.use('/masinfo', masinfoRouter);
 app.use('/iniciarsesion', iniciarsesionRouter);
+
+
+pool.query("select * from empleados").then(function(resultados){
+  console.log(resultados)
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
