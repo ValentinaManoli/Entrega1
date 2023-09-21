@@ -13,6 +13,7 @@ var nosotrosRouter = require('./routes/nosotros');
 var cursosRouter = require('./routes/cursos');
 var masinfoRouter = require('./routes/masinfo');
 var iniciarsesionRouter = require('./routes/iniciarsesion');
+var loginRouter =require('./routes/admin/login');
 
 var app = express();
 
@@ -33,6 +34,7 @@ app.use('/nosotros', nosotrosRouter);
 app.use('/cursos', cursosRouter);
 app.use('/masinfo', masinfoRouter);
 app.use('/iniciarsesion', iniciarsesionRouter);
+app.use('/admin/login', loginRouter);
 
 
 pool.query("select * from empleados").then(function(resultados){
