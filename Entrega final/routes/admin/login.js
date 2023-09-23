@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var usuariosModel = require ('./../../models/usuariosModel')
+var usuariosModel = require ('../../models/usuariosModel')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('admin/login', {
@@ -17,7 +17,7 @@ router.post('/', async (res,req,next)=>{
         var data = await usuariosModel.getUserByUsernameAndPassword(user, password);
 
         if (data != undefined){
-            res.redirect('/admin/iniciarsesion')
+            res.redirect('/admin/novedades')
         } else{
             res.render ('admin/login', {
                 layout: 'admin/layout',
