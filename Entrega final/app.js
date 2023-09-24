@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 require('dotenv').config();
+var session = require('express-session')
 var pool = require('./models/bd');
 
 var indexRouter = require('./routes/index');
@@ -14,6 +15,7 @@ var cursosRouter = require('./routes/cursos');
 var masinfoRouter = require('./routes/masinfo');
 var iniciarsesionRouter = require('./routes/iniciarsesion');
 var loginRouter =require('./routes/admin/login');
+var adminRouter = require ('./routes/admin/novedades')
 
 var app = express();
 
@@ -28,6 +30,27 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+app.use(session({
+  secret: '518be6196b931a', //REVISAR ESTE CODIGO
+  resave: false,
+  saveUninitialized: true
+
+}))
+
+secured = async (req, res, next) => {
+  try {
+    console.log(req.session.id_user);
+    if (req.session.id_user) {
+      next();
+    } else {
+      res.redirect('/admin/login');
+    }
+  } catch (error){
+    console.log(error);
+  }
+}
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/nosotros', nosotrosRouter);
@@ -35,6 +58,7 @@ app.use('/cursos', cursosRouter);
 app.use('/masinfo', masinfoRouter);
 app.use('/iniciarsesion', iniciarsesionRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', secured, adminRouter);
 
 
 // catch 404 and forward to error handler
