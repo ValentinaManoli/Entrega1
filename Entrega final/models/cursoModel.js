@@ -4,7 +4,7 @@ var pool = require('./bd')
 async function getCurso(){
     
         var query = 'select * from cursos';
-        var rows = await pool.query ();
+        var rows = await pool.query(query);
         return rows;
 
 }
