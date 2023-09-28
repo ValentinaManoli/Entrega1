@@ -15,7 +15,7 @@ var cursosRouter = require('./routes/cursos');
 var masinfoRouter = require('./routes/masinfo');
 var iniciarsesionRouter = require('./routes/iniciarsesion');
 var loginRouter =require('./routes/admin/login');
-var adminRouter = require ('./routes/admin/novedades')
+var adminRouter = require ('./routes/admin/cursos')
 
 var app = express();
 
@@ -58,7 +58,7 @@ app.use('/cursos', cursosRouter);
 app.use('/masinfo', masinfoRouter);
 app.use('/iniciarsesion', iniciarsesionRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', secured, adminRouter);
+app.use('/admin/cursos', secured, adminRouter);
 
 
 // catch 404 and forward to error handler

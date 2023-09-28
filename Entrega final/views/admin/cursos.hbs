@@ -1,0 +1,50 @@
+<div>
+    <div>
+        <h1>Hola, {{user}}!</h1>
+        <h2>Tus cursos</h2>
+    </div>
+
+        <a href="/admin/login/logout" class="btn btn-danger">Cerrar sesión</a>
+
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">CURSO</th>
+      <th scope="col">UNIDAD</th>
+      <th scope="col">TAREA</th>
+      <th scope="col">CALIFICACIÓN</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each curso}}
+    <tr>
+      <th scope="row">{{curso}}</th>
+      <td>{{unidad}}</td>
+      <td>{{tarea}}</td>
+      <td>{{calificacion}}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{curso}}</th>
+      <td>{{unidad}}</td>
+      <td>{{tarea}}</td>
+      <td>{{calificacion}}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{curso}}</th>
+      <td>{{unidad}}</td>
+      <td>{{tarea}}</td>
+      <td>{{calificacion}}</td>
+    </tr>
+    <tr>
+      <th scope="row">{{curso}}</th>
+      <td>{{unidad}}</td>
+      <td>{{tarea}}</td>
+      <td>{{calificacion}}</td>
+    </tr>
+  </tbody>
+  {{/each}}
+</table>
+
+
+
+</div>
