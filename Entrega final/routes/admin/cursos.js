@@ -9,9 +9,9 @@ router.get('/', async function(req, res, next) {
 
   res.render('admin/cursos', {
     layout: 'admin/layout',
-    user: req.session.user
+    user: req.session.user,
 
-    cursos
+    curso
     
   });
 });

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 28-09-2023 a las 03:18:24
+-- Tiempo de generación: 02-10-2023 a las 18:33:48
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.4.3
 
@@ -44,6 +44,26 @@ INSERT INTO `cursos` (`curso`, `unidad`, `tarea`, `calificacion`) VALUES
 ('Inglés', 2, 'Introducción al Presente continuo', 6),
 ('Alemán', 4, 'Vocabulario de negocios', 7),
 ('Portugués', 3, 'Vocabulario de viajes', 10);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(15) NOT NULL AUTO_INCREMENT,
+  `user` varchar(150) NOT NULL,
+  `password` varchar(150) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `user`, `password`) VALUES
+(1, 'Valentina', 'e10adc3949ba59abbe56e057f20f883e');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
