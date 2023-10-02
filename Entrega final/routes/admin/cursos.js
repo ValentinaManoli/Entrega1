@@ -11,7 +11,7 @@ router.get('/', async function(req, res, next) {
     layout: 'admin/layout',
     user: req.session.user
 
-    curso
+    cursos
     
   });
 });
