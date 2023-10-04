@@ -1,49 +1,45 @@
-<div>
-    <div>
-        <h1>Hola, {{user}}!</h1>
-        <h2>Tus cursos</h2>
-    </div>
+<div class="">
+  <div>
+    <h1>Hola, {{user}}!</h1>
+    <h2>Historial de tareas de tus cursos</h2>
+  </div>
+  <div class="text-end">
+    <a href="/admin/cursos/agregar" class="btn btn-success"><i class="fa-solid fa-plus"></i> Agregar tarea</a>
 
-        <a href="/admin/login/logout" class="btn btn-danger">Cerrar sesión</a>
+    <a href="/admin/login/logout" class="btn btn-danger">Cerrar sesión</a>
 
-        <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">CURSO</th>
-      <th scope="col">UNIDAD</th>
-      <th scope="col">TAREA</th>
-      <th scope="col">CALIFICACIÓN</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each curso}}
-    <tr>
-      <th scope="row">{{curso}}</th>
-      <td>{{unidad}}</td>
-      <td>{{tarea}}</td>
-      <td>{{calificacion}}</td>
-    </tr>
-    <tr>
-      <th scope="row">{{curso}}</th>
-      <td>{{unidad}}</td>
-      <td>{{tarea}}</td>
-      <td>{{calificacion}}</td>
-    </tr>
-    <tr>
-      <th scope="row">{{curso}}</th>
-      <td>{{unidad}}</td>
-      <td>{{tarea}}</td>
-      <td>{{calificacion}}</td>
-    </tr>
-    <tr>
-      <th scope="row">{{curso}}</th>
-      <td>{{unidad}}</td>
-      <td>{{tarea}}</td>
-      <td>{{calificacion}}</td>
-    </tr>
-  </tbody>
-  {{/each}}
-</table>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col" class="columna">#</th>
+        <th scope="col" class="columna">CURSO</th>
+        <th scope="col" class="columna">UNIDAD</th>
+        <th scope="col" class="columna">TAREA</th>
+        <th scope="col" class="columna">CALIFICACIÓN</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {{#each curso}}
+      <tr>
+        <th scope="row" class="fila">{{id}}</th>
+        <th scope="row" class="fila">{{curso}}</th>
+        <td class="fila">{{unidad}}</td>
+        <td class="fila">{{tarea}}</td>
+        <td class="fila">{{calificacion}}</td>
+        <td class="fila">
+          <a class="btn btn-secondary" href="/admin/cursos/modificar/{{id}}"><i class="fa-solid fa-square-pen"></i></a>
+          <a class="btn btn-secondary" href="/admin/cursos/eliminar/{{id}}"><i class="fa-solid fa-trash-can"></i></a>
+        </td>
+      </tr>
+
+
+    </tbody>
+    {{/each}}
+
+  </table>
 
 
 

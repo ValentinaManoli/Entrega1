@@ -1,0 +1,22 @@
+<div>
+    <h2>Agregar nueva tarea</h2>
+    <form action="/admin/agregar" method="post">
+    
+    <div class="modificar-curso">
+    <textarea class="form-control" type="text" placeholder="Curso" name="curso"></textarea>
+
+    </div>
+    <div class="modificar-unidad">
+<textarea class="form-control" type="text" placeholder="Unidad" name="unidad"></textarea>
+
+    </div>
+    <div class="modificar-tarea">
+<textarea class="form-control" type="text" placeholder="Tarea" name="tarea"></textarea>
+
+    </div>
+    <button class="btn btn-primary" type="submit">Guardar</button>
+    </form>
+    {{#if error}}
+    <p>{{message}}</p>
+    {{/if}}
+</div>
