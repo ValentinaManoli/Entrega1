@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 02-10-2023 a las 18:33:48
+-- Tiempo de generación: 06-10-2023 a las 19:06:47
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.4.3
 
@@ -27,23 +27,22 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `cursos` (
+  `id` int(3) NOT NULL AUTO_INCREMENT,
   `curso` text NOT NULL,
   `unidad` int(5) NOT NULL,
   `tarea` text NOT NULL,
-  `calificacion` int(2) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `calificacion` int(2) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- Volcado de datos para la tabla `cursos`
 --
 
-INSERT INTO `cursos` (`curso`, `unidad`, `tarea`, `calificacion`) VALUES
-('Inglés', 1, 'Introducción al Presente simple', 9),
-('Inglés', 2, 'Introducción al Presente continuo', 6),
-('Inglés', 1, 'Introducción al Presente simple', 9),
-('Inglés', 2, 'Introducción al Presente continuo', 6),
-('Alemán', 4, 'Vocabulario de negocios', 7),
-('Portugués', 3, 'Vocabulario de viajes', 10);
+INSERT INTO `cursos` (`id`, `curso`, `unidad`, `tarea`, `calificacion`) VALUES
+(3, 'Inglés', 1, 'Introducción al Presente simple', 9),
+(4, 'Inglés', 2, 'Introducción al Presente continuo', 6),
+(5, 'Alemán', 4, 'Vocabulario de negocios', 7);
 
 -- --------------------------------------------------------
 

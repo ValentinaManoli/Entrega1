@@ -20,7 +20,7 @@ router.get('/eliminar/:id', async function(req, res, next) {
 
   var id = req.params.id;
 
-  await cursoModel.delteCursosById(id);
+  await cursoModel.deleteCursoById(id);
   res.redirect('/admin/cursos');
 });
 
@@ -35,7 +35,7 @@ router.get('agregar', (req, res, next)=> {
 router.post('/agregar', async (req, res, next) => {
   try{
     if (req.body.curso != "" && req.body.unidad !="" && req.body.tarea !=""){
-      await cursosModel.insertCurso(req.body);
+      await cursoModel.insertCurso(req.body);
       res.redirect('/admin/cursos')
     } else {
       res.render ('admin/agregar', {
@@ -57,7 +57,7 @@ router.post('/agregar', async (req, res, next) => {
 router.get('/modificar/:id', async (req, res, next) => {
   var id = req.params.id;
   console.log(req.params.id);
-  var curso = await cursosModel.getCursoById(id);
+  var curso = await cursoModel.getCursoById(id);
 
   res.render('admin/modificar', {
     layout: 'admin/layout', 
@@ -74,7 +74,7 @@ router.post('/modificar', async (req, res, next) => {
       tarea: req.body.tarea
     }
     console.log(obj)
-    await cursosModel.modificarCursoById(obj, req.body.id);
+    await cursoModel.modificarCursoById(obj, req.body.id);
     res.redirect('/admin/cursos')
   } catch(error) {
     console.log (error)
