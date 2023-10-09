@@ -1,17 +1,25 @@
 <div>
     <h2>Modificar tareas</h2>
-    <form action="/admin/modificar" method="post">
-    <input type="hidden" value="curso.id" name="id">
+    <form action="/admin/cursos/modificar" method="post">
+        <input type="hidden" value="curso.id" name="id">
         <div class="modificar-curso">
-            <textarea class="form-control" type="text" placeholder="Curso" name="curso" value="{{curso.curso}}"></textarea>
+            <textarea class="form-control" type="text" placeholder="Curso" name="curso"
+                value="{{curso.curso}}"></textarea>
 
         </div>
         <div class="modificar-unidad">
-            <textarea class="form-control" type="text" placeholder="Unidad" name="unidad" value="{{curso.unidad}}"></textarea>
+            <textarea class="form-control" type="text" placeholder="Unidad" name="unidad"
+                value="{{curso.unidad}}"></textarea>
 
         </div>
         <div class="modificar-tarea">
-            <textarea class="form-control" type="text" placeholder="Tarea" name="tarea" value="{{curso.tarea}}"></textarea>
+            <textarea class="form-control" type="text" placeholder="Tarea" name="tarea"
+                value="{{curso.tarea}}"></textarea>
+
+        </div>
+        <div class="modificar-calificacion">
+            <textarea class="form-control" type="text" placeholder="Calificacion" name="calificacion"
+                value="{{curso.calificacion}}"></textarea>
 
         </div>
         <button class="btn btn-primary" type="submit">Modificar</button>

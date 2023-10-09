@@ -26,8 +26,8 @@ router.get('/eliminar/:id', async function(req, res, next) {
 
 
 
-router.get('agregar', (req, res, next)=> {
-  res.render('admin/cursos/agregar', {
+router.get('/agregar', (req, res, next)=> {
+  res.render('admin/agregar', {
     layout: 'admin/layout'
   })
 })
@@ -71,7 +71,8 @@ router.post('/modificar', async (req, res, next) => {
     var obj = {
       curso: req.body.curso,
       unidad: req.body.unidad,
-      tarea: req.body.tarea
+      tarea: req.body.tarea,
+      calificacion: req.body.calificacion
     }
     console.log(obj)
     await cursoModel.modificarCursoById(obj, req.body.id);

@@ -1,6 +1,6 @@
 <div>
     <h2>Agregar nueva tarea</h2>
-    <form action="/admin/agregar" method="post">
+    <form action="/admin/cursos/agregar" method="post">
     
     <div class="modificar-curso">
     <textarea class="form-control" type="text" placeholder="Curso" name="curso"></textarea>
@@ -14,6 +14,11 @@
 <textarea class="form-control" type="text" placeholder="Tarea" name="tarea"></textarea>
 
     </div>
+    <div class="modificar-calificacion">
+<textarea class="form-control" type="text" placeholder="Calificacion" name="calificacion"></textarea>
+
+    </div>
+    
     <button class="btn btn-primary" type="submit">Guardar</button>
     </form>
     {{#if error}}
