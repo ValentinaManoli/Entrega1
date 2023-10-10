@@ -231,6 +231,7 @@ footer{
     justify-content: center;
     width: 150px;
     height: 150px;
+    object-fit: cover;
     border-radius: 50%;
     border: 5px solid rgb(255, 87, 51);
 
@@ -254,8 +255,23 @@ footer{
     border-radius: 10px;
     background-color: rgb(243, 243, 243);
     
-    
-    
+}
+.info-input{
+    border: solid 2px rgb(144, 12, 63);
+    border-radius: 3px;
+}
+.btn-enviar{
+    background-color: rgb(144, 12, 63);
+    color: rgb(243, 243, 243);
+    border: none;
+    border-radius: 3px;
+    padding: 0 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.btn-enviar:hover{
+    transition: 0.3s;
+    background-color: rgb(190, 17, 83);
 }
 
 /*Mas info*/
@@ -277,10 +293,3 @@ footer{
    font-size: 40px;
 }
 
-
-/*prueba de media q*/
-
-@media screen and (max-width: 800px){
-    
-    
-}

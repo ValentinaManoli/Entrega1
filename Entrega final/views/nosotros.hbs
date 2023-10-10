@@ -64,14 +64,14 @@
         <h2>Contactanos</h2>
         <form action="/nosotros" method="post" class="formulario">
             <div class="formulariocontacto">
-                <input type="name" class="nombre" placeholder="Nombre" name="nombre">
-                <input type="name" class="apellido" placeholder="Apellido" name="apellido">
-                <input type="email" class="email" placeholder="Email" name="email">
-                <input type="tel" class="telefono" placeholder="Teléfono de contacto" name="tel">
-                <button>Enviar</button>
+                <input type="name" class="nombre info-input" placeholder="Nombre" name="nombre">
+                <input type="name" class="apellido info-input" placeholder="Apellido" name="apellido">
+                <input type="email" class="email info-input" placeholder="Email" name="email">
+                <input type="tel" class="telefono info-input" placeholder="Teléfono de contacto" name="tel">
+                <button class=" btn-enviar">Enviar</button>
             </div>
             <div class="mensaje">
-                <textarea name="mensaje" id="textarea" cols="30" rows="10"></textarea>
+                <textarea name="mensaje" id="textarea" cols="30" rows="10" class="info-input"></textarea>
             </div>
         </form>
         <p>{{message}}</p>
